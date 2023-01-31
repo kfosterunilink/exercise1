@@ -13,8 +13,8 @@ public class ExerciseController {
     @Autowired
     private ExerciseService service;
 
-    @GetMapping("/{primaryId}")
-    public ExerciseModel getExercise(@PathVariable Long primaryId) {
-        return service.findExercise(primaryId);
+    @GetMapping("/{id}")
+    public ExerciseModel getExercise(@PathVariable Long id) {
+        return service.findExercise(id);
     }
 }
