@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class ExerciseEntity {
 
     @Id
-    @Column(name = "ExerciseId")
+    @Column(name = "Exercise_Id")
     @GeneratedValue(generator = "ExerciseIdSeq")
     @SequenceGenerator(name = "ExerciseIdSeq", sequenceName = "ExerciseIdSeq", allocationSize = 1)
     private Long id;

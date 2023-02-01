@@ -19,6 +19,9 @@ dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-data-jpa') {
 		exclude(module: 'hibernate-validator')
 	}
+	implementation('com.h2database:h2')
+	implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.14.2'
+
 }
 
 tasks.named('test') {
